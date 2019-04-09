@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700i,900');
+@font-face {
+    font-family: "RailwayHeavy";
+    src: url("../fonts/raleway.heavy.ttf");
+}
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/raleway.regular.ttf");
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/roboto.bold.ttf");
+}
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("../fonts/roboto.black.ttf");
+}
+@font-face {
+    font-family: "RobotoBlackItalic";
+    src: url("../fonts/roboto.black.italic.ttf");
+}
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #abeafa;
+    height: 700px;
+}
+
+.footer {
+    height: 351px;
+    background-color: #373737;
+    clear: both;
+}
+
+.headerConteiner {
+    height: inherit;
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footerConteiner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.middleConteiner {
+    width: 1170px;
+    margin: -20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.middleConteinerLeft {
+    width: 270px;
+    word-wrap: normal;
+    background-color: #26d2fc;
+}
+
+.middleConteinerRight {
+    width: 870px;
+    background-color: #f8f8f8;
+}
+.headerLogo {
+    background: url("../images/surfhouse_logo.png") no-repeat;
+    width: 125px;
+    height: 111px;
+    display: block;
+    position: absolute;
+    left: 70px;
+    top: 24px;
+}
+
+.socialIcons {
+    width: 120px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 987px;
+    top: 50px;
+}
+
+.socialIcons {
+    color: white;
+}
+
+.jpFunride {
+    position: absolute;
+    width: 313px;
+    left: 750px;
+    top: 244px;
+    color: #fff51f;
+}
+
+.jpFunrideHeader {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 34px;
+}
+
+.jpFunrideText {
+    font-family: RalewayRegular,sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.headerBanner {
+    position: absolute;
+    width: 270px;
+    height: 300px;
+    background-color: #fff51f;
+    border: darkgreen;
+    top: 335px;
+}
+
+.headerBannerLogo {
+    width: 199px;
+    position: absolute;
+    font-size: 30px;
+    color: #333333;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    top: 79px;
+    left: 27px;
+}
+
+.headerBannerText {
+    width: 218px;
+    position: absolute;
+    color: #333333;
+    font-family: "Raleway Bold Italic", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 14px;
+    top: 161px;
+    left: 22px;
+}
+
+.buyButton {
+    display: block;
+    position: absolute;
+    background-color: #fff51f;
+    width: 124px;
+    height: 49px;
+    text-decoration: none;
+    color: #000000;
+    font-family: RailwayHeavy,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    top: 475px;
+    left: 751px;
+    line-height: 49px;
+}
+
+.middleLeftMenu {
+    width: inherit;
+    height: 66px;
+    background-color: #333333;
+    font-family: Roboto,sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding-left: 43px;
+    padding-top: 21px;
+    box-sizing: border-box;
+}
+
+.middleLeftMenuLinks a {
+    display: block;
+    height: 43px;
+    color: #000000;
+    font-family: "RobotoBlack",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 42px;
+
+}
+
+.middleLeftMenuLinks a:hover {
+    color: white;
+    background-color: #333333;
+}
+
+.middleLeftImg {
+    height: 300px;
+    border-top: 30px solid white;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.middleLeftImgText {
+    position: relative;
+    color: #333333;
+    font-weight: 400;
+    font-family: "RailwayHeavy",sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 36px;
+    text-transform: uppercase;
+    top: 63px;
+    left: 139px;
+}
+
+.middleConteinerRightText {
+    color: #707070;
+    font-family: "RobotoBlackItalic",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+    padding-top: 29px;
+    padding-left: 24px;
+
+}
+
+.prodImgAndDescrBlock {
+    background-color: #ffffff;
+    width: 270px;
+    height: 320px;
+    float: left;
+    padding: 10px;
+    position: relative;
+    margin-top: 23px;
+}
+
+.prodCatImgBlock {
+    width: 250px;
+    height: 235px;
+    background-color: #eaeaea;
+    box-sizing: border-box;
+}
