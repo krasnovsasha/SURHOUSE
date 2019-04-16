@@ -26,18 +26,38 @@
     src: url("../fonts/roboto.black.italic.ttf");
 }
 
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/roboto.regular.ttf");
+}
+
+@font-face {
+    font-family: "RalewayExtraBold";
+    src: url("../fonts/raleway.extrabold.ttf");
+}
+
 body {
     margin: 0;
+    background-color: #aef8f5;
+}
+
+.mainConteiner {
+    min-height: 100%;
+}
+
+.clear {
+    height: 351px;
 }
 
 .header {
-    background-color: #abeafa;
+    background: url("../images/indexBack.jpg") no-repeat center;
     height: 700px;
 }
 
 .footer {
     height: 351px;
     background-color: #373737;
+    margin-top: -351px;
     clear: both;
 }
 
@@ -59,17 +79,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
 }
 
 .middleConteinerLeft {
     width: 270px;
     word-wrap: normal;
     background-color: #26d2fc;
-}
-
-.middleConteinerRight {
-    width: 870px;
-    background-color: #f8f8f8;
 }
 
 .headerLogo {
@@ -83,6 +99,7 @@ body {
 }
 
 .socialIcons {
+    color: white;
     width: 120px;
     position: absolute;
     display: flex;
@@ -91,8 +108,11 @@ body {
     top: 50px;
 }
 
-.socialIcons {
-    color: white;
+.socialIcons a {color: white}
+
+.socialIcons a:hover {
+    color: #fff51f;
+    transform: scale(1.3);
 }
 
 .jpFunride {
@@ -171,6 +191,11 @@ body {
     line-height: 49px;
 }
 
+.buyButton:hover {
+    transform: scale(1.1);
+    box-shadow: #707070 2px 2px;
+}
+
 .middleLeftMenu {
     width: inherit;
     height: 66px;
@@ -188,12 +213,12 @@ body {
 
 .middleLeftMenuLinks a {
     display: block;
-    height: 43px;
+    height: 37px;
     color: #000000;
     font-family: "RobotoBlack",sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 47px;
     text-transform: uppercase;
     text-decoration: none;
     padding-left: 42px;
@@ -207,12 +232,12 @@ body {
 
 .middleLeftImg {
     height: 300px;
-    border-top: 30px solid white;
-    background-color: #e0e0e0;
-    box-sizing: border-box;
+    border-top: 30px solid #aef8f5;
+    background: url("../images/store.jpg") no-repeat top;
 }
 
 .middleLeftImgText {
+    width: 109px;
     position: relative;
     color: #333333;
     font-weight: 400;
@@ -221,34 +246,521 @@ body {
     font-style: italic;
     line-height: 36px;
     text-transform: uppercase;
-    top: 63px;
+    top: 127px;
     left: 139px;
 }
 
-.middleConteinerRightText {
-    color: #707070;
-    font-family: "RobotoBlackItalic",sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #f8f8f8;
-    padding-top: 29px;
-    padding-left: 24px;
+.middleConteinerRight {
+    width: 870px;
+    background-color: #aef8f5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.prodImgAndDescrBlock {
-    background-color: #ffffff;
+.box {
     width: 270px;
     height: 320px;
-    float: left;
-    padding: 10px;
-    position: relative;
-    margin-top: 23px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
 }
 
-.prodCatImgBlock {
-    width: 250px;
-    height: 235px;
-    background-color: #eaeaea;
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box2 {
+    width: 270px;
+    height: 320px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+}
+
+.box2:hover {
+    transform: scale(1.1);
+}
+
+.newProducts {
+    display: inline-block;
+    height: 78px;
+    width: 100%;
+    color: #707070;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: robotoBlackItalic,sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 26px;
+    padding-left: 25px;
     box-sizing: border-box;
 }
+
+.topProducts {
+    display: inline-block;
+    height: 78px;
+    width: 100%;
+    color: #707070;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: robotoBlackItalic,sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 28px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    margin-top: 45px;
+    margin-left: 4px;
+}
+
+.saleProducts {
+    display: inline-block;
+    height: 78px;
+    width: 100%;
+    color: #707070;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: robotoBlackItalic,sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    padding-top: 28px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    margin-top: 54px;
+    margin-left: 5px
+}
+
+.newProductsImg {
+    width: 250px;
+    height: 230px;
+    background-color: #eaeaea;
+
+}
+
+.box:nth-child(n+5) {
+    margin-top: 30px;
+}
+
+.description {
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "RobotoBlackItalic",sans-serif;
+    float: left;
+    margin-top: 18px;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+
+.description2 {
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "RobotoBlackItalic",sans-serif;
+    float: left;
+    margin-top: 10px;
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+
+.description3 {
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "RobotoBlackItalic",sans-serif;
+    float: left;
+    position: relative;
+    top: -28px;
+    left: 4px;
+}
+
+.description4 {
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "RobotoBlackItalic",sans-serif;
+    float: left;
+    margin-top: 17px;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+
+.description5 {
+    background-color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: "RobotoBlackItalic",sans-serif;
+    float: left;
+    margin-top: 26px;
+    margin-left: 8px;
+}
+
+.price {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "RobotoBlackItalic",sans-serif;
+    margin-top: 18px;
+    margin-right: 4px;
+    float: right;
+}
+
+.price2 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "RobotoBlackItalic",sans-serif;
+    margin-top: 9px;
+    margin-right: 10px;
+    float: right;
+}
+
+.price3 {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "RobotoBlackItalic",sans-serif;
+    margin-top: 18px;
+    margin-right: 8px;
+    float: right;
+    top: -46px;
+    left: -3px;
+    position: relative;
+}
+
+.price4 {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "RobotoBlackItalic",sans-serif;
+    margin-top: -18px;
+    margin-right: 4px;
+    float: right;
+}
+
+.newPrice3 {
+    width: 49px;
+    height: 12px;
+    opacity: 0.6;
+    color: #fe0000;
+    font-family: RobotoBlackItalic,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    float: right;
+    margin-right: -49px;
+    margin-top: 39px
+}
+
+.newPrice {
+    color: #e24602;
+    font-family: RobotoBlackItalic,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-top: 41px;
+    margin-right: -69px;
+    float: right;
+}
+
+.newPrice2 {
+    opacity: 0.6;
+    color: #fe0000;
+    font-family: RobotoBlackItalic,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 40px;
+    margin-right: -68px;
+}
+
+.newPrice4 {
+    color: #e24602;
+    font-family: RobotoBlackItalic,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-top: -4px;
+    margin-right: -63px;
+    float: right;;
+}
+
+.brand {
+    width: 1170px;
+    height: 160px;
+    background-color: #ffffff;
+    margin: 33px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgBrand {
+    width: 1142px;
+    height: 26px;
+}
+
+.instaFeed {
+    width: 1170px;
+    height: 245px;
+    background-color: #eaeaea;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialsBanners {
+    width: 1170px;
+    height: 150px;
+    background-color: #eaeaea;
+    margin: auto;
+}
+
+.socialBannersBox {
+    width: 390px;
+    height: 150px;
+    display: block;
+    float: left;
+}
+
+.socialBannersBox:hover{
+    opacity: 0.7;
+}
+
+.instaFeedText {
+    display: inline-block;
+    height: 22px;
+    color: #333333;
+    font-family: RobotoBlackItalic,sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 8px;
+}
+
+.instaFeedText:before {
+    display: block;
+    float: left;
+    padding-right: 8px;
+    content: url("../images/insta_icon.png");
+}
+
+.instaFeedText span {
+    font-size: 18px;
+}
+
+.instaPicturesBox {
+    width: 100%;
+    height: 185px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.instaPictures {
+    width: 185px;
+    height: 185px;
+
+}
+
+.instaPictures:hover {
+    opacity: 0.8;
+}
+
+.headerForInstaFeed {
+    width: 1170px;
+    height: 105px;
+    background-color: #eaeaea;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.new {
+    width: 46px;
+    height: 46px;
+    background: url("../images/new.png");
+    position: relative;
+    left: 215px;
+    bottom: 248px;
+}
+
+.hot {
+    width: 46px;
+    height: 46px;
+    background: url("../images/hot.png");
+    position: relative;
+    left: 215px;
+    bottom: 244px;
+}
+
+.footerConteinerTop {
+    width: 1170px;
+    margin: 0 auto;
+    background-color: #373737;
+    height: 301px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 73px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.footerConteinerBottom {
+    height: 50px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.copyrigts {
+    height: 13px;
+    color: #dad9d9;
+    font-family: RobotoRegular,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 16px;
+    float: right;
+}
+
+.socialIconsFooter {
+    width: 178px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.socialIconsFooter a:hover {
+    transform: scale(1.4);
+}
+
+.socialIconsFooterImg {
+    filter: invert(1);
+}
+
+.footerColumnHead {
+    font-family: RalewayExtraBold, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.footerColumnLinks a {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 12px;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.footerColumnLinks a:hover {
+    transform: scale(1.1);
+}
+
+.newsLetter {
+    width: 270px;
+}
+
+.columnNewsLetter {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 12px;
+}
+
+.newsLetterText {
+    margin-bottom: 31px;
+}
+
+.columnNewsLetter input {
+    background-color: #fff51f;
+    width: 180px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.columnNewsLetter button {
+    width: 71px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+}
+
+.columnNewsLetter button:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.cardsWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.about {
+    width: 232px;
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.aboutText {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.aboutPhone {
+    margin-top: 12px;
+}
+
+.aboutPhone a {
+    font-size: 14px;
+    margin-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.aboutPhone span,
+.aboutEmail span {
+    margin-right: 10px;
+}
+
+.aboutEmail {
+    margin-top: 14px;
+    color: #faef03;
+    font-size: 14px;
+}
+
+.aboutEmail a {
+    margin-top: 14px;
+    color: #faef03;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
